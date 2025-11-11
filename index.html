@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de Centros de Trabajo - Sinaloa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎓 Buscador de Centros de Trabajo</h1>
+      <p>Sistema Educativo de Sinaloa</p>
+    </div>
+
+    <div class="search-container">
+      <div class="search-box">
+        <select id="municipioFilter" class="filter-select">
+          <option value="">Todos los municipios</option>
+        </select>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Buscar por clave, nombre, municipio, localidad, colonia..."
+          autocomplete="off"
+        />
+      </div>
+    </div>
+
+    <div class="results-info" id="resultsInfo">Esperando búsqueda...</div>
+    <div class="results-container" id="resultsContainer">
+      <div class="no-results">
+        <div class="no-results-icon">📝</div>
+        <div class="no-results-text">Empieza a escribir para buscar una escuela</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
